@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Parse an AWS CloudFormation template and extract all resource logical IDs that are of type 'AWS::S3::Bucket'",
+    "format": "python",
+    "solution_criteria": "Function should return a list of logical IDs for S3 bucket resources. Should handle templates where S3 buckets may or may not exist. Should work with valid JSON/YAML CloudFormation templates."
+  },
+  {
+    "task": "Create a JSON policy document that allows an IAM user to perform read-only operations (GetObject, ListBucket) on a specific S3 bucket named 'my-data-bucket'",
+    "format": "json",
+    "solution_criteria": "Valid IAM policy JSON with correct structure, principal, actions, and resource ARNs. Should only grant read permissions (GetObject, ListBucket). Should reference the specific bucket ARN and objects within it."
+  },
+  {
+    "task": "Write a regular expression to validate and extract the AWS account ID and region from an S3 bucket ARN in the format 'arn:aws:s3:::bucket-name' or 'arn:aws:s3:region:account-id:bucket/object-key'",
+    "format": "regex",
+    "solution_criteria": "Regex should match valid AWS S3 ARN formats, correctly capture account IDs (12 digits) and regions (e.g., us-east-1, eu-west-1) when present. Should handle both simple bucket ARNs and detailed object ARNs."
+  }
+]
