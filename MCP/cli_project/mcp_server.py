@@ -14,7 +14,7 @@ docs = {
     "spec.txt": "These specifications define the technical requirements for the equipment.",
 }
 
-# Tool to read a doc
+########## Tool to read a doc ######################################################################
 @mcp.tool(
     name="read_doc_contents",
     description="Read the contents of a document and return it as a string.",
@@ -26,7 +26,7 @@ def read_document(
         raise ValueError(f"Doc with id {doc_id} not found")
     return docs[doc_id]
 
-# Tool to edit a doc
+########## Tool to edit a doc ######################################################################
 @mcp.tool(
     name="edit_doc_contents",
     description="Edit a document by replacing a string in the documents content with a new string.",
